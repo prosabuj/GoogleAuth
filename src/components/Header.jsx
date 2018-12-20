@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import GoogleAuth from "../GoogleAuth";
 
 const Header = () => {
@@ -8,6 +8,18 @@ const Header = () => {
       <Link to="/" className="item">
         Streamy
       </Link>
+      <NavLink to="/stream/new" className="item">
+        Add New
+      </NavLink>
+      <NavLink to="/stream/edit" className="item">
+        Edit
+      </NavLink>
+      <NavLink to="/stream/show" className="item">
+        Show
+      </NavLink>
+      <NavLink to="/stream/delete" className="item">
+        Delete
+      </NavLink>
       <div className="right menu">
         <Link to="/" className="item">
           All Streamer
